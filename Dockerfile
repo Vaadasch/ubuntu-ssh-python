@@ -1,5 +1,7 @@
 FROM ubuntu:16.04
 
+RUN apt-get update
+
 ## PYTHON
 RUN apt-get install -y software-properties-common python-software-properties
 
