@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 ## PYTHON
-RUN add-apt-repository -y ppa:jonathonf/python-3.6
+RUN add-apt-repository ppa:jonathonf/python-3.6
 
 RUN apt-get update
 
