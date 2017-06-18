@@ -1,19 +1,11 @@
 FROM ubuntu:16.04
 
+## PYTHON
+RUN add-apt-repository -y ppa:jonathonf/python-3.6
+
 RUN apt-get update
 
-## PYTHON
-RUN apt-get install -y build-essential checkinstall
-
-RUN apt-get install -y libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-
-RUN "wget https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tar.xz"
-
-RUN tar xvf Python-3.6.0.tar.xz && cd Python-3.6.0
-
-RUN ./configure
-
-RUN make altinstall
+RUN apt-get -y  install python3.6
 
 
 ## SSHD
