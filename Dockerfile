@@ -1,12 +1,7 @@
 FROM ubuntu:16.04
 
 ## PYTHON
-RUN add-apt-repository ppa:jonathonf/python-3.6
-
-RUN apt-get update
-
-RUN apt-get -y  install python3.6
-
+RUN apt-get install software-properties-common python-software-properties
 
 ## SSHD
 RUN apt-get install -y openssh-server
