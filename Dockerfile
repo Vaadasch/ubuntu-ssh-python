@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 ## PYTHON
-RUN apt-get install software-properties-common python-software-properties
+RUN apt-get install -y software-properties-common python-software-properties
 
 ## SSHD
 RUN apt-get install -y openssh-server
